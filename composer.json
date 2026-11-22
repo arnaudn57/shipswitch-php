@@ -1,0 +1,46 @@
+{
+  "name": "shipswitch/shipswitch",
+  "description": "PHP SDK for ShipSwitch feature flags",
+  "type": "library",
+  "keywords": [
+    "feature-flags",
+    "feature-toggles",
+    "shipswitch"
+  ],
+  "homepage": "https://shipswitch.io",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Arnaud Nicastro",
+      "email": "contact@shipswitch.io"
+    }
+  ],
+  "support": {
+    "docs": "https://shipswitch.io/docs",
+    "email": "contact@shipswitch.io"
+  },
+  "require": {
+    "php": ">=8.1",
+    "ext-json": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^10.5"
+  },
+  "suggest": {
+    "ext-curl": "Faster and more reliable requests than PHP streams",
+    "psr/simple-cache": "Share flag values between requests with any PSR-16 cache"
+  },
+  "autoload": {
+    "psr-4": {
+      "ShipSwitch\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "ShipSwitch\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test": "phpunit"
+  }
+}
